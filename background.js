@@ -29,6 +29,7 @@ function setCount(num) {
 	var ctx = canvas.getContext("2d");
 	ctx.font = "30px Courier";
 	ctx.textBaseline = "top";
+	ctx.fillStyle="#CCCCCC";
 	ctx.fillText(msg,0,0);
 	var imgdata = ctx.getImageData(0,0,canvas.width,canvas.height);
 	if(!debugging) {
